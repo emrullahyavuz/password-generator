@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    background: darkturquoise;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+}
+
+.passwordContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 4px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.passwordContent input {
+    width: 70%;
+    border-radius: 20px;
+    background: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.passwordContent i {
+    font-size: 1.75rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.passwordContent i:hover {
+    opacity: 1;
+}
+
+.passwordBtn {
+    padding: 15px;
+    border-radius: 25px;
+    margin: 10px 0;
+    color: white;
+    background-color:goldenrod;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.passwordBtn:hover {
+    background-color: blueviolet;
+}
+
+.copyAlert {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background: lavender;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    font-size: 20px;
+    font-size: bolder;
+    color: green;
+}
+
+.copyAlert.active {
+    right: -200px;
+}
